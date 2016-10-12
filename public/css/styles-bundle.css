@@ -909,3 +909,53 @@ XIX. ADS
     margin: 2.4rem 0;
     padding: 2.4rem 0; } }
 
+.transform, .cover-wrapper .cover {
+  -ms-transform: translateY(-50%);
+  /* IE 9 */
+  -webkit-transform: translateY(-50%);
+  /* Chrome, Safari, Opera */
+  transform: translateY(-50%); }
+
+#content-header {
+  height: 100vh;
+  background-image: url("../images/_cover-lg.jpg");
+  background-size: cover;
+  background-position: left;
+  position: relative; }
+  @media only screen and (max-width: 1440px) {
+    #content-header {
+      background-image: url("../images/_cover-md.jpg"); } }
+
+.cover-wrapper {
+  width: 50vw;
+  height: 100vh;
+  float: right;
+  position: relative; }
+  .cover-wrapper .cover {
+    padding-right: 8rem;
+    position: absolute;
+    left: 0;
+    top: 50%; }
+    .cover-wrapper .cover h1 {
+      color: #fec44f;
+      margin: 0 auto 2rem;
+      line-height: 6.6rem;
+      font-weight: bold; }
+    .cover-wrapper .cover p {
+      max-width: 800px;
+      font-size: 2rem;
+      line-height: 2.6rem;
+      color: white;
+      margin: 0 0 2rem 0; }
+    .cover-wrapper .cover .cover-btn {
+      margin-top: 2rem;
+      opacity: 0.6;
+      background: #fec44f;
+      height: 50px;
+      display: inline-block;
+      float: left;
+      margin-right: 0.8rem;
+      padding: 1.2rem 1.5rem 0;
+      cursor: pointer; }
+      .cover-wrapper .cover .cover-btn:hover {
+        opacity: 1; }

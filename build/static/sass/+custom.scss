@@ -1,11 +1,74 @@
-//  _____           _                    _____ _         _           
-// /  __ \         | |                  /  ___| |       | |          
-// | /  \/_   _ ___| |_ ___  _ __ ___   \ `--.| |_ _   _| | ___  ___ 
+//  _____           _                    _____ _         _
+// /  __ \         | |                  /  ___| |       | |
+// | /  \/_   _ ___| |_ ___  _ __ ___   \ `--.| |_ _   _| | ___  ___
 // | |   | | | / __| __/ _ \| '_ ` _ \   `--. \ __| | | | |/ _ \/ __|
 // | \__/\ |_| \__ \ || (_) | | | | | | /\__/ / |_| |_| | |  __/\__ \
 //  \____/\__,_|___/\__\___/|_| |_| |_| \____/ \__|\__, |_|\___||___/
-//                                                  __/ |            
-//                                                 |___/             
+//                                                  __/ |
+//                                                 |___/
 
 @import 'variables';
 @import 'mixins';
+
+$primary: $chartYellow;
+
+.transform {
+    -ms-transform: translateY(-50%); /* IE 9 */
+    -webkit-transform: translateY(-50%); /* Chrome, Safari, Opera */
+    transform: translateY(-50%);
+}
+
+#content-header {
+	height: 100vh;
+	background-image: url("../images/_cover-lg.jpg");
+	background-size: cover;
+	background-position: left;
+	position: relative;
+
+	@media only screen and (max-width: 1440px) {
+		background-image: url("../images/_cover-md.jpg");
+	}
+}
+
+.cover-wrapper {
+	width: 50vw;
+	height: 100vh;
+	float: right;
+	position: relative;
+
+	.cover {
+		padding-right: 8rem;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		@extend .transform;
+
+		h1 {
+			color: $primary;
+			margin: 0 auto 2rem;
+			line-height: 6.6rem;
+			font-weight: bold;
+		}
+		p {
+			max-width: 800px;
+			font-size: 2rem;
+			line-height: 2.6rem;
+			color: white;
+			margin: 0 0 2rem 0;
+		}
+		.cover-btn {
+			margin-top: 2rem;
+			opacity: 0.6;
+			background: $primary;
+			height: 50px;
+			display: inline-block;
+			float: left;
+			margin-right: 0.8rem;
+			padding: 1.2rem 1.5rem 0;
+			cursor: pointer;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}
