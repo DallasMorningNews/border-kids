@@ -1,0 +1,25 @@
+@import 'variables';
+@import 'mixins';
+
+#select-story-wrapper {
+	.story-btn {
+		height: 100vh;
+		width: calc(100% / 3);
+		display: inline-block;
+		float: left;
+		border-right: 5px solid white;
+	}
+	#story1, #story2, #story3 {
+		background-position: center;
+		background-size: cover;
+	}
+	#story1 {
+		background-image: url("../images/_story1.jpg");
+	}
+	#story2 {
+		background-image: url("../images/_story2.jpg");
+	}
+	#story3 {
+		background-image: url("../images/_story3.jpg");
+	}
+}

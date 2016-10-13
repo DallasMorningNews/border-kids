@@ -909,45 +909,113 @@ XIX. ADS
     margin: 2.4rem 0;
     padding: 2.4rem 0; } }
 
-.transform, .cover-wrapper .cover {
+#select-story-wrapper .story-btn {
+  height: 100vh;
+  width: calc(100% / 3);
+  display: inline-block;
+  float: left;
+  border-right: 5px solid white; }
+
+#select-story-wrapper #story1, #select-story-wrapper #story2, #select-story-wrapper #story3 {
+  background-position: center;
+  background-size: cover; }
+
+#select-story-wrapper #story1 {
+  background-image: url("../images/_story1.jpg"); }
+
+#select-story-wrapper #story2 {
+  background-image: url("../images/_story2.jpg"); }
+
+#select-story-wrapper #story3 {
+  background-image: url("../images/_story3.jpg"); }
+
+.transform, .intro-wrapper .intro-content {
   -ms-transform: translateY(-50%);
   /* IE 9 */
   -webkit-transform: translateY(-50%);
   /* Chrome, Safari, Opera */
   transform: translateY(-50%); }
 
+article#content {
+  padding-bottom: 0; }
+
 #content-header {
   height: 100vh;
+  width: 100%;
   background-image: url("../images/_cover-lg.jpg");
   background-size: cover;
   background-position: left;
-  position: relative; }
+  position: relative;
+  min-height: 1100px;
+  margin-bottom: none; }
   @media only screen and (max-width: 1440px) {
     #content-header {
       background-image: url("../images/_cover-md.jpg"); } }
+  @media only screen and (max-width: 678px) {
+    #content-header {
+      background-image: url("../images/_cover-sm.jpg"); } }
+  #content-header img {
+    display: none; }
+    @media only screen and (max-width: 678px) {
+      #content-header img {
+        display: block; } }
 
-.cover-wrapper {
+.intro-wrapper {
   width: 50vw;
-  height: 100vh;
+  height: calc(100vh - 51px);
+  min-height: 1100px;
   float: right;
   position: relative; }
-  .cover-wrapper .cover {
+  @media only screen and (max-width: 1440px) {
+    .intro-wrapper {
+      width: 60vw; } }
+  @media only screen and (max-width: 678px) {
+    .intro-wrapper {
+      min-height: inherit;
+      width: 100vw;
+      float: left;
+      margin: 0 auto; } }
+  .intro-wrapper .intro-content {
     padding-right: 8rem;
     position: absolute;
-    left: 0;
-    top: 50%; }
-    .cover-wrapper .cover h1 {
+    top: 45%; }
+    @media only screen and (max-width: 1440px) {
+      .intro-wrapper .intro-content {
+        position: relative; } }
+    @media only screen and (max-width: 678px) {
+      .intro-wrapper .intro-content {
+        padding-right: 0;
+        width: 85%;
+        margin: 0 auto; } }
+    .intro-wrapper .intro-content h1 {
       color: #fec44f;
       margin: 0 auto 2rem;
       line-height: 6.6rem;
       font-weight: bold; }
-    .cover-wrapper .cover p {
+      @media only screen and (max-width: 1100px) {
+        .intro-wrapper .intro-content h1 {
+          font-size: 5rem;
+          line-height: 5.6rem; } }
+      @media only screen and (max-width: 650px) {
+        .intro-wrapper .intro-content h1 {
+          font-size: 4.5rem;
+          line-height: 5rem; } }
+    .intro-wrapper .intro-content p {
       max-width: 800px;
       font-size: 2rem;
       line-height: 2.6rem;
       color: white;
       margin: 0 0 2rem 0; }
-    .cover-wrapper .cover .cover-btn {
+      @media only screen and (max-width: 1100px) {
+        .intro-wrapper .intro-content p {
+          font-size: 1.8rem;
+          line-height: 2.4rem; } }
+    .intro-wrapper .intro-content a {
+      color: #424242;
+      font-weight: bold;
+      text-decoration: none;
+      height: 50px; }
+    .intro-wrapper .intro-content .intro-btn {
       margin-top: 2rem;
       opacity: 0.6;
       background: #fec44f;
@@ -956,6 +1024,15 @@ XIX. ADS
       float: left;
       margin-right: 0.8rem;
       padding: 1.2rem 1.5rem 0;
+      font-weight: normal;
       cursor: pointer; }
-      .cover-wrapper .cover .cover-btn:hover {
+      .intro-wrapper .intro-content .intro-btn:hover {
         opacity: 1; }
+      @media only screen and (max-width: 1100px) {
+        .intro-wrapper .intro-content .intro-btn h5 {
+          font-size: 1.5rem; } }
+
+@media only screen and (max-width: 678px) {
+  .content-well {
+    background: black;
+    width: 100%; } }
