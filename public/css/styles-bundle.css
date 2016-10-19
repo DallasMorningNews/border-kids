@@ -966,6 +966,10 @@ article#content {
       #content-header img {
         display: block; } }
 
+.shareCommentsTop {
+  float: left;
+  margin-bottom: 2rem; }
+
 .intro-wrapper {
   width: 50vw;
   height: calc(100vh - 51px);
@@ -974,7 +978,7 @@ article#content {
   position: relative; }
   @media only screen and (max-width: 1440px) {
     .intro-wrapper {
-      width: 60vw; } }
+      width: 55vw; } }
   @media only screen and (max-width: 678px) {
     .intro-wrapper {
       min-height: inherit;
@@ -993,11 +997,14 @@ article#content {
         padding-right: 0;
         width: 85%;
         margin: 0 auto; } }
+    .intro-wrapper .intro-content p.byline {
+      font-size: 1.5rem; }
     .intro-wrapper .intro-content h1 {
       color: #fec44f;
       margin: 0 auto 2rem;
       line-height: 6.6rem;
-      font-weight: bold; }
+      font-weight: bold;
+      display: inline-block; }
       @media only screen and (max-width: 1100px) {
         .intro-wrapper .intro-content h1 {
           font-size: 5rem;
@@ -1157,7 +1164,8 @@ article#content {
         color: #fec44f; }
       @media only screen and (max-width: 678px) {
         .stories-nav-wrapper .stories-wrapper .close {
-          right: -40px; } }
+          right: -40px;
+          position: fixed; } }
 
 .hover-text-wrapper {
   width: 85%;
