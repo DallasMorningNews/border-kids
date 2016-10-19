@@ -1122,7 +1122,7 @@ article#content {
     .stories-nav-wrapper .stories-wrapper #story3 {
       background-image: url("../images/_story3.jpg"); }
     .stories-nav-wrapper .stories-wrapper .story-hover {
-      background: #1d4384;
+      background: rgba(29, 67, 132, 0.8);
       opacity: 0;
       position: absolute;
       display: block;

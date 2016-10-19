@@ -233,7 +233,7 @@ article#content {
         }
         .story-hover {
             @extend .transition;
-            background: rgba(29, 67, 132, 1);
+            background: rgba(29, 67, 132, .8);
             opacity: 0;
             position: absolute;
             display: block;
